@@ -62,6 +62,48 @@ Because there are already [libraries](https://pypi.org/project/SpeechRecognition
 - Very difficult task, relatively new (from 2019)
 - Current State-of-the-Art model achieves 58% TOP-1 accuracy 
 
+### Distribution of number of samples 
+
+![histogram distribution](./samples_dist.png)
+
+Mode of number of samples is around 5-6 samples per word. It is very small number when training Neural Network. Because of that there is yet not any good model which achieved high accuracy on full WLASL dataset. 
+
+
+![Top 1 accuracy on this dataset](top1.png)
+
+## Example
+
+### Original Image 
+![original img](./img.png)
+### Image with MediaPipe Holistic landmarks
+![mediapipe img](./mediapipe.png)
+
+### 4 frames subsampled from video for a word "book"
+![4 frames subsampled from video for a word book](./4frames.png)
+
+### How those frames look together
+![Word book in ASL](./book.gif)
+
+As we can see for basic signs even few frames are enough to preserve the meaning of the sign.
+
+
+## Results
+
+### Model after regularization - I
+
+#### Accuracy
+![Accuracy](./acc1.png)
+
+#### Loss
+![Loss](./loss1.png)
+
+### Model after regularization - II (loaded from previous model)
+
+#### Accuracy
+![Accuracy](./acc.png)
+
+#### Loss
+![Loss](./loss.png)
 
 ## Current progress
 
@@ -80,10 +122,7 @@ Because there are already [libraries](https://pypi.org/project/SpeechRecognition
 - [x] Save best models using Keras Callbacks
 - [ ] Gather additional datasets / Generate new dataset
 
-## Example
-
 ## Credits
 Project was **heavily** inspired by **Nicholas Renotte** video on youtube [Sign Language Detection using ACTION RECOGNITION with Python | LSTM Deep Learning Model](https://www.youtube.com/watch?v=doDUihpj6ro), here you can find his code [Github website](https://github.com/nicknochnack/ActionDetectionforSignLanguage).
 
 Preprocessing as well as model training differs as Nicholas was working on videos which he captured, while author used WLASL dataset.
-
