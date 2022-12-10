@@ -125,4 +125,37 @@ As we can see for basic signs even few frames are enough to preserve the meaning
 ## Credits
 Project was **heavily** inspired by **Nicholas Renotte** video on youtube [Sign Language Detection using ACTION RECOGNITION with Python | LSTM Deep Learning Model](https://www.youtube.com/watch?v=doDUihpj6ro), here you can find his code [Github website](https://github.com/nicknochnack/ActionDetectionforSignLanguage).
 
+Functions such as 
+ - holistic_adnotation
+ - mediapipe_detection
+ - draw_landmarks
+ - extract_keypoints
+ 
+ were written by Nicholas.
+ 
 Preprocessing as well as model training differs as Nicholas was working on videos which he captured, while author used WLASL dataset.
+
+Author's functions:
+ - video_preprocessing
+ - video_normalization
+
+
+[How to make and display gif in Python](https://stackoverflow.com/questions/61110188/how-to-display-a-gif-in-jupyter-notebook-using-google-colab) by [Ying](https://stackoverflow.com/users/6765415/ying)
+
+Other parts might been utilized from libraries documentation thus not explicitly mentioned.
+
+## Tech stack
+
+- Python 3.10.9
+- animatplot 0.4.2
+- jupiter 1.0.0
+- keras 2.11.0
+- matplotlib 3.6.2
+- mediapipe 0.9.0.1
+- numpy 1.23.5
+- opencv-contrib-python 4.6.0.66
+- pandas 1.5.2
+- pip 21.3.1
+- scikit-learn 1.2
+- tensorflow 2.11.0
+
