@@ -153,3 +153,4 @@ cython_debug/
 
 kaggle.json
 wlasl-processed.zip
+/dataset/videos/
